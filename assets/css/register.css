@@ -1,0 +1,146 @@
+body {
+  padding-bottom: 40px;
+  background: url(http://localhost/client/assets/img/backgrounds/2.jpg);
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.box {
+  max-width: 570px; 
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.box .num { float: left; }
+.box .num h2 { margin-top: 5px; font-weight: 400; }
+.box .desc { 
+  float: left; 
+  padding-left: 10px; 
+  text-align: left; 
+  padding-top: 5px; 
+}
+.box .desc p { margin:0; }
+.box .desc span { margin-top: -2px; font-size: 13px }
+.box .form-title { 
+  margin-top: 20px; 
+  font-weight: bold; 
+  font-size: 13px; 
+  position: relative;
+}
+.box .form-title:before {
+  position: absolute;
+  content: " ";
+  width: 420px;
+  z-index: -1;
+  right: 5px;
+  bottom: 8px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 5px 10px 15px 10px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin label {
+  margin-top: 10px;
+}
+
+/* Arrows progress */
+.btn-breadcrumb .btn:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 100%;
+  z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid rgb(173, 173, 173);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 3;
+}
+
+/** The Spacing **/
+.btn-breadcrumb .btn {
+  padding:6px 12px 6px 45px;
+}
+.btn-breadcrumb .btn:first-child {
+  padding:6px 12px 6px 20px;
+}
+.btn-breadcrumb .btn:last-child {
+  padding:6px 20px 6px 45px;
+}
+
+/** Info button **/
+.btn-breadcrumb .btn.btn-info:not(:last-child):after {
+  border-left: 30px solid #5bc0de;
+}
+.btn-breadcrumb .btn.btn-info:not(:last-child):before {
+  border-left: 35px solid #269abc;
+}
+
+
+.btn-breadcrumb .btn.btn-info.active 
+{
+  background: #444;
+  border: 1px solid #444;
+}
+.btn-breadcrumb .btn.btn-info.active:not(:last-child):after {
+  border-left: 30px solid #444;
+}
+.btn-breadcrumb .btn.btn-info.active:not(:last-child):before {
+  border-left: 30px solid #444;
+}
+
+.form-signin h3 { text-align: center; margin-bottom: 20px; }
+.btn.lanjut { float: right }
+.btn.center { margin: 0 auto; margin-top: 10px; display: block;}
+
+.form-box {
+  position: relative;
+}
+
+/*Hide all except first fieldset*/
+fieldset { 
+  position: absolute; 
+  width: 100%;
+
+}
+fieldset:not(:first-of-type) {
+  display: none;  
+}
